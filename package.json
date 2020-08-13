@@ -1,0 +1,22 @@
+{
+  "name": "bafreelancingweb",
+  "version": "1.0.0",
+  "description": "my freelancing website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "barida",
+  "license": "ISC",
+  "dependencies": {
+    "konva": "^7.0.5",
+    "next": "^9.5.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-konva": "^16.13.0-5",
+    "react-lottie": "^1.2.3",
+    "use-image": "^1.0.6"
+  }
+}
