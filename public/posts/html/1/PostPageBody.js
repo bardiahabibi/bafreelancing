@@ -41,11 +41,11 @@ class PostPageBody extends React.Component {
           {`
             @font-face {
               font-family: Roboto-Regular;
-              src: url("./fonts/Roboto-Regular.ttf");
+              src: url("/fonts/Roboto-Regular.ttf");
             }
             @font-face {
               font-family: Roboto-Light;
-              src: url("./fonts/Roboto-Light.ttf");
+              src: url("/fonts/Roboto-Light.ttf");
             }
           `}
         </style>
