@@ -40,7 +40,7 @@ class HireSection extends React.Component {
           {`
             @font-face {
               font-family: Roboto-Regular;
-              src: url("./fonts/Roboto-Regular.ttf");
+              src: url("/fonts/Roboto-Regular.ttf");
             }
           `}
         </style>

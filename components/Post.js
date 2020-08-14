@@ -78,7 +78,7 @@ class Post extends React.Component {
             }
             @font-face {
               font-family: Roboto-Light;
-              src: url("./fonts/Roboto-Light.ttf");
+              src: url("/fonts/Roboto-Light.ttf");
             }
           `}
         </style>

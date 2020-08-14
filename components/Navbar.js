@@ -63,7 +63,7 @@ class Navbar extends React.Component {
             }
             #devLogo {
               grid-area: devLogo;
-              background-image: url("./components_assets/NavbarAssets/dev-logo.png");
+              background-image: url("/components_assets/NavbarAssets/dev-logo.png");
               background-repeat: no-repeat;
               background-size: contain;
               background-position: center;
@@ -74,7 +74,7 @@ class Navbar extends React.Component {
             }
             #githubLogo {
               grid-area: githubLogo;
-              background-image: url("./components_assets/NavbarAssets/github-logo.png");
+              background-image: url("/components_assets/NavbarAssets/github-logo.png");
               background-repeat: no-repeat;
               background-size: contain;
               background-position: center;
@@ -85,7 +85,7 @@ class Navbar extends React.Component {
             }
             #linkedinLogo {
               grid-area: linkedinLogo;
-              background-image: url("./components_assets/NavbarAssets/linkedin-logo.png");
+              background-image: url("/components_assets/NavbarAssets/linkedin-logo.png");
               background-repeat: no-repeat;
               background-size: contain;
               background-position: center;
@@ -100,7 +100,7 @@ class Navbar extends React.Component {
           {`
             @font-face {
               font-family: Roboto-Regular;
-              src: url("./fonts/Roboto-Regular.ttf");
+              src: url("/fonts/Roboto-Regular.ttf");
             }
           `}
         </style>
