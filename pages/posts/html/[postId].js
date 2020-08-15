@@ -2,20 +2,21 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import Layout from "../../../components/Layout";
 import PostPageTitle from "../../../components/PostPageTitle";
-import data from "../../../public/posts/html/1/title.json";
+//import ff from "../../../public/posts/html/1/title.json";
 
-const htmlPost = ({ fetchdata }) => {
+const htmlPost = ({ fd }) => {
   const router = useRouter();
   const postId = router.query.postId;
+
   const id = 1;
-  const PostPageBody = dynamic(() =>
-    import(`../../../public/posts/html/${postId}/PostPageBody`)
+  const PostPage = dynamic(() =>
+    import(`../../../public/posts/html/${postId}/PostPage`)
   );
-  console.log();
+  console.log(fd);
   return (
     <Layout>
       <div>
-        <PostPageBody />
+        <PostPage />
       </div>
     </Layout>
   );
@@ -31,9 +32,11 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps() {
-  const fetchdata = data;
+  const fd = dynamic(() => import(`../../../public/posts/html/1/title.js`));
+  console.log(fd);
+  const title = fd;
   return {
-    props: { fetchdata }, // will be passed to the page component as props
+    props: {}, // will be passed to the page component as props
   };
 }
 
