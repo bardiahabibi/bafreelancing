@@ -1,3 +1,5 @@
+import emailjs from "emailjs-com";
+
 class HireForm extends React.Component {
   constructor(props) {
     super(props);
@@ -8,6 +10,60 @@ class HireForm extends React.Component {
       user_allottedtime: 0,
     };
   }
+
+  nameChange = (event) => {
+    this.setState({
+      user_name: event.target.value,
+    });
+  };
+
+  emailChange = (event) => {
+    this.setState({
+      user_mail: event.target.value,
+    });
+  };
+
+  messageChange = (event) => {
+    this.setState({
+      user_message: event.target.value,
+    });
+  };
+
+  allottedtimeChange = (event) => {
+    this.setState({
+      user_allottedtime: event.target.value,
+    });
+  };
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    const templateId = "bafreelancing_hire";
+    this.sendHireForm(templateId, {
+      user_name: this.state.user_name,
+      user_mail: this.state.user_mail,
+      user_message: this.state.user_message,
+      user_allottedtime: this.state.user_allottedtime,
+    });
+  };
+
+  sendHireForm = (templateId, variables) => {
+    emailjs
+      .send(
+        "bafreelancing_gmail",
+        templateId,
+        variables,
+        "user_ZnttAT37i1Di1omsoNHoJ"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        (err) => {
+          console.log("FAILED...", err);
+        }
+      );
+  };
+
   render() {
     return (
       <div>
@@ -25,6 +81,7 @@ class HireForm extends React.Component {
                   name="user_name"
                   id="name"
                   required
+                  onChange={this.nameChange}
                 />
               </div>
               <div id="formEmailContainer">
@@ -38,6 +95,7 @@ class HireForm extends React.Component {
                   name="user_mail"
                   id="email"
                   required
+                  onChange={this.emailChange}
                 />
               </div>
               <div id="formMessageContainer">
@@ -52,6 +110,7 @@ class HireForm extends React.Component {
                   required
                   cols="50"
                   rows="8"
+                  onChange={this.messageChange}
                 ></textarea>
               </div>
               <div id="formAllottedTimeContainer">
@@ -67,6 +126,7 @@ class HireForm extends React.Component {
                   min="1"
                   max="210"
                   required
+                  onChange={this.allottedtimeChange}
                 />
               </div>
               <div id="formButtonContainer">
