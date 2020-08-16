@@ -3,6 +3,7 @@ import Landing from "../components/Landing";
 import Technologies from "../components/Technologies";
 import JourneysSection from "../components/JourneysSection";
 import HireSection from "../components/HireSection";
+import HireForm from "../components/HireForm";
 
 class index extends React.Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class index extends React.Component {
         <Technologies />
         <JourneysSection />
         <HireSection />
+        <HireForm />
       </Layout>
     );
   }
