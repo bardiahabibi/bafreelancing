@@ -20,6 +20,21 @@ class PostPageLayout extends React.Component {
             #postPageBodyContainer p {
               margin-bottom: 30px;
             }
+            #postPageTitleContainer {
+              text-align: center;
+              font-family: Roboto-Regular;
+              font-size: 45px;
+              color: #535353;
+              padding-top: 50px;
+              margin-bottom: 80px;
+            }
+            #postPageHeaderImage {
+              width: 100%;
+              height: 60vh;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+            }
             @font-face {
               font-family: Roboto-Regular;
               src: url("/fonts/Roboto-Regular.ttf");

@@ -1,42 +1,44 @@
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import Layout from "../../../components/Layout";
-import PostPageTitle from "../../../components/PostPageTitle";
-//import ff from "../../../public/posts/html/1/title.json";
+import numberOfPosts from "../../../public/posts/html/numberOfPosts.json";
 
-const htmlPost = ({ fd }) => {
+const htmlPost = ({ NumberOfPosts }) => {
   const router = useRouter();
   const postId = router.query.postId;
-
-  const id = 1;
   const PostPage = dynamic(() =>
     import(`../../../public/posts/html/${postId}/PostPage`)
   );
-  console.log(fd);
+  const imageUrl = `/posts/html/${postId}/header.png`;
   return (
     <Layout>
       <div>
-        <PostPage />
+        <PostPage Image={imageUrl} />
       </div>
     </Layout>
   );
 };
 
 export async function getStaticPaths() {
+  let param = [];
+  for (let i = 1; i <= numberOfPosts.number; i++) {
+    param.push(i);
+  }
+  const path = param.map((item) => {
+    let postId = item.toString();
+    let params = { postId };
+    return { params };
+  });
   return {
-    paths: [
-      { params: { postId: "1" } }, // See the "paths" section below
-    ],
-    fallback: false, // See the "fallback" section below
+    paths: path,
+    fallback: false,
   };
 }
 
 export async function getStaticProps() {
-  const fd = dynamic(() => import(`../../../public/posts/html/1/title.js`));
-  console.log(fd);
-  const title = fd;
+  const NumberOfPosts = numberOfPosts;
   return {
-    props: {}, // will be passed to the page component as props
+    props: { NumberOfPosts },
   };
 }
 
