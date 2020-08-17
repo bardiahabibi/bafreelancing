@@ -139,7 +139,7 @@ class HireForm extends React.Component {
           {`
             #formContainer {
               width: 60vw;
-              height: 100vh;
+              height: 97vh;
               box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.16);
               display: grid;
               grid-template-columns: 1fr 1fr;
@@ -234,8 +234,11 @@ class HireForm extends React.Component {
             }
             #formButtonContainer {
               grid-area: formButtonContainer;
-              padding-top: 70px;
-              padding-left: 185px;
+              padding-right: 30px;
+              padding-bottom: 30px;
+              display: flex;
+              justify-content: flex-end;
+              align-items: flex-end;
             }
           `}
         </style>

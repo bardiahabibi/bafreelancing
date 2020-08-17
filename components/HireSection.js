@@ -5,13 +5,14 @@ class HireSection extends React.Component {
     super(props);
     this.state = {};
   }
+
   render() {
     return (
       <div>
         <div id="hireSectionContainer">
           <div id="hireSectionHeader">want to hire me?</div>
           <div id="hireSectionAnimationContainer">
-            <HireAnimation />
+            <HireAnimation showModal={this.props.showModal} />
           </div>
         </div>
         <style jsx>

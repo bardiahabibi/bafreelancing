@@ -24,6 +24,10 @@ class HireAnimation extends React.Component {
     });
   };
 
+  formToggle = () => {
+    this.props.showModal();
+  };
+
   render() {
     const defaultOptions = {
       loop: false,
@@ -41,6 +45,7 @@ class HireAnimation extends React.Component {
         ref={this.lottieRef}
         onMouseOver={this.animation_play}
         onMouseLeave={this.animation_stop}
+        onClick={this.formToggle}
       >
         <Lottie
           options={defaultOptions}
