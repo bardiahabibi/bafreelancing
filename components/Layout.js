@@ -9,7 +9,7 @@ class Layout extends React.Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar page={this.props.page} />
         {this.props.children}
         <Footer />
         <style jsx global>{`

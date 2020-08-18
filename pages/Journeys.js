@@ -10,7 +10,7 @@ class Journeys extends React.Component {
   render() {
     return (
       <div>
-        <Layout>
+        <Layout page="Journeys">
           <div id="journeysPage">
             <div id="journeysMargin"></div>
             <div id="Header">Journeys</div>

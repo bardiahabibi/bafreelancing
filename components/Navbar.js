@@ -13,12 +13,24 @@ class Navbar extends React.Component {
           <div id="navbar">
             <div className="navbarItem">
               <Link href="/">
-                <a style={{ color: "inherit", textDecoration: "none" }}>Home</a>
+                <a
+                  style={{
+                    color: this.props.page == "Home" ? "white" : "inherit",
+                    textDecoration: "none",
+                  }}
+                >
+                  Home
+                </a>
               </Link>
             </div>
             <div className="navbarItem">
               <Link href="/Journeys">
-                <a style={{ color: "inherit", textDecoration: "none" }}>
+                <a
+                  style={{
+                    color: this.props.page == "Journeys" ? "white" : "inherit",
+                    textDecoration: "none",
+                  }}
+                >
                   Journeys
                 </a>
               </Link>
@@ -60,6 +72,12 @@ class Navbar extends React.Component {
               font-size: 25px;
               color: #d9d9d9;
               font-family: Roboto-Regular;
+              transition: 0.2s ease-in-out;
+            }
+            .navbarItem :hover {
+              cursor: pointer;
+              color: white;
+              transition: 0.2s ease-in-out;
             }
             #communicationsContainer {
               grid-area: communicationLogos;
