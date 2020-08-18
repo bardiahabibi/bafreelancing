@@ -6,6 +6,7 @@ class CssPostsSection extends React.Component {
     this.state = {};
   }
   render() {
+    const postCategory = "css";
     return (
       <div>
         <div id="postsSection">
@@ -15,24 +16,16 @@ class CssPostsSection extends React.Component {
               author="Bardia"
               authorImage={"/components_assets/TechnologiesAssets/css.png"}
               postTitle="make a crud server side with python"
+              postCategory={postCategory}
+              postNumber="1"
             />
             <Post
               postImage={"/components_assets/TechnologiesAssets/css.png"}
               author="Bardia"
               authorImage={"/components_assets/TechnologiesAssets/css.png"}
               postTitle="make a crud server side with python"
-            />
-            <Post
-              postImage={"/components_assets/TechnologiesAssets/css.png"}
-              author="Bardia"
-              authorImage={"/components_assets/TechnologiesAssets/css.png"}
-              postTitle="make a crud server side with python"
-            />
-            <Post
-              postImage={"/components_assets/TechnologiesAssets/css.png"}
-              author="Bardia"
-              authorImage={"/components_assets/TechnologiesAssets/css.png"}
-              postTitle="make a crud server side with python"
+              postCategory={postCategory}
+              postNumber="2"
             />
           </div>
           <div id="marginContainer">

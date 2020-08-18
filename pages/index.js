@@ -20,6 +20,12 @@ class index extends React.Component {
     });
   };
 
+  hideModal = () => {
+    this.setState({
+      modalShow: false,
+    });
+  };
+
   render() {
     return (
       <Layout>
@@ -27,7 +33,7 @@ class index extends React.Component {
         <Technologies />
         <JourneysSection />
         <HireSection showModal={this.showModal} />
-        <Modal show={this.state.modalShow}>
+        <Modal show={this.state.modalShow} hideModal={this.hideModal}>
           <HireForm />
         </Modal>
       </Layout>

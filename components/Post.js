@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 class Post extends React.Component {
   constructor(props) {
     super(props);
@@ -7,12 +9,22 @@ class Post extends React.Component {
     return (
       <div>
         <div id="postContainer">
-          <div id="postImage"></div>
+          <Link
+            href={`/posts/${this.props.postCategory}/[postId]`}
+            as={`/posts/${this.props.postCategory}/${this.props.postNumber}`}
+          >
+            <div id="postImage"></div>
+          </Link>
           <div id="postAuthorContainer">
             <div id="authorImage"></div>
             <div id="authorName">{this.props.author}</div>
           </div>
-          <div id="postTitle">{this.props.postTitle}</div>
+          <Link
+            href={`/posts/${this.props.postCategory}/[postId]`}
+            as={`/posts/${this.props.postCategory}/${this.props.postNumber}`}
+          >
+            <div id="postTitle">{this.props.postTitle}</div>
+          </Link>
         </div>
         <style jsx>{`
           #postContainer {
@@ -37,6 +49,9 @@ class Post extends React.Component {
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
+          }
+          #postImage :hover {
+            cursor: pointer;
           }
           #postAuthorContainer {
             grid-area: postAuthorContainer;
@@ -68,6 +83,9 @@ class Post extends React.Component {
             margin-left: 25px;
             padding-right: 25px;
             padding-top: 8px;
+          }
+          #postTitle:hover {
+            cursor: pointer;
           }
         `}</style>
         <style jsx global>

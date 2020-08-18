@@ -1,3 +1,4 @@
+import Link from "next/link";
 import JourneyAnimation from "../public/components_assets/JourneysSectionAssets/JourneyAnimation";
 
 class JourneysSection extends React.Component {
@@ -28,7 +29,9 @@ class JourneysSection extends React.Component {
               I shared some of my code-journeys, hope helpful for you{" "}
             </div>
             <div id="journeysSectionButtonContainer">
-              <button id="journeysSectionButton">see</button>
+              <Link href="/Journeys">
+                <button id="journeysSectionButton">see</button>
+              </Link>
             </div>
           </div>
         </div>

@@ -3,6 +3,11 @@ class Modal extends React.Component {
     super(props);
     this.state = {};
   }
+
+  hideForm = () => {
+    this.props.hideModal();
+  };
+
   render() {
     return (
       <div>
@@ -21,6 +26,7 @@ class Modal extends React.Component {
             style={{
               display: this.props.show ? "block" : "none",
             }}
+            onClick={this.hideForm}
           ></div>
         </div>
         <style jsx>

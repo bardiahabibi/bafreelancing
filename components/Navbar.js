@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
@@ -9,8 +11,18 @@ class Navbar extends React.Component {
         <div className="navbarContainer">
           <div id="baLogo"></div>
           <div id="navbar">
-            <div className="navbarItem">Home</div>
-            <div className="navbarItem">Journeys</div>
+            <div className="navbarItem">
+              <Link href="/">
+                <a style={{ color: "inherit", textDecoration: "none" }}>Home</a>
+              </Link>
+            </div>
+            <div className="navbarItem">
+              <Link href="/Journeys">
+                <a style={{ color: "inherit", textDecoration: "none" }}>
+                  Journeys
+                </a>
+              </Link>
+            </div>
             <div className="navbarItem">Hire</div>
           </div>
           <div id="communicationsContainer">
