@@ -5,6 +5,11 @@ class Navbar extends React.Component {
     super(props);
     this.state = {};
   }
+
+  showForm = () => {
+    this.props.showModal();
+  };
+
   render() {
     return (
       <div>
@@ -35,12 +40,30 @@ class Navbar extends React.Component {
                 </a>
               </Link>
             </div>
-            <div className="navbarItem">Hire</div>
+            <div className="navbarItem" onClick={this.showForm}>
+              Hire
+            </div>
           </div>
           <div id="communicationsContainer">
-            <div id="devLogo"></div>
-            <div id="githubLogo"></div>
-            <div id="linkedinLogo"></div>
+            <div id="devLogo">
+              <a href="https://dev.to/bardiahabibi" target="_blank">
+                <div style={{ height: "100%", weight: "100%" }}></div>
+              </a>
+            </div>
+
+            <div id="githubLogo">
+              <a href="https://github.com/bardiahabibi" target="_blank">
+                <div style={{ height: "100%", weight: "100%" }}></div>
+              </a>
+            </div>
+            <div id="linkedinLogo">
+              <a
+                href="https://linkedin.com/in/bardia-habibi-freelance"
+                target="_blank"
+              >
+                <div style={{ height: "100%", weight: "100%" }}></div>
+              </a>
+            </div>
           </div>
         </div>
         <style jsx>
@@ -90,6 +113,7 @@ class Navbar extends React.Component {
               grid-template-columns: 1fr 1fr 1fr;
               grid-template-rows: 100%;
               grid-template-areas: "devLogo githubLogo linkedinLogo";
+              box-sizing: border-box;
             }
             #devLogo {
               grid-area: devLogo;
@@ -123,6 +147,37 @@ class Navbar extends React.Component {
               margin-bottom: 12px;
               margin-left: 7px;
               margin-right: 11px;
+            }
+
+            @media only screen and (max-width: 820px) {
+              .navbarContainer {
+                grid-template-columns: 150px 1fr;
+                grid-template-areas: "baLogo navbar ";
+              }
+              #communicationsContainer {
+                display: none;
+              }
+            }
+
+            @media only screen and (max-width: 600px) {
+              #navbar {
+                padding-left: 10px;
+                padding-right: 20px;
+                align-items: center;
+                justify-content: center;
+              }
+              .navbarItem {
+                margin-left: 8%;
+                font-size: 16px;
+                font-family: Roboto-Regular;
+              }
+              .navbarContainer {
+                grid-template-columns: 130px 1fr;
+                grid-template-areas: "baLogo navbar ";
+              }
+              #communicationsContainer {
+                display: none;
+              }
             }
           `}
         </style>

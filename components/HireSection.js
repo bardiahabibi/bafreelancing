@@ -27,6 +27,7 @@ class HireSection extends React.Component {
               font-size: 53px;
               color: #535353;
               margin-top: 50px;
+              transition: 0.3s ease-in-out;
             }
             #hireSectionAnimationContainer {
               width: 100%;
@@ -34,6 +35,25 @@ class HireSection extends React.Component {
               display: flex;
               justify-content: center;
               align-items: center;
+            }
+
+            @media only screen and (max-width: 800px) {
+              #hireSectionHeader {
+                font-size: 40px;
+                margin-top: 50px;
+              }
+            }
+            @media only screen and (max-width: 650px) {
+              #hireSectionHeader {
+                font-size: 30px;
+                margin-top: 50px;
+              }
+            }
+            @media only screen and (max-width: 400px) {
+              #hireSectionHeader {
+                font-size: 24px;
+                margin-top: 50px;
+              }
             }
           `}
         </style>

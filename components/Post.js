@@ -87,6 +87,18 @@ class Post extends React.Component {
           #postTitle:hover {
             cursor: pointer;
           }
+
+          @media only screen and (max-width: 600px) {
+            #postContainer {
+              width: 240px;
+              height: 290px;
+              margin-top: 55px;
+              margin-left: 10px;
+            }
+            #postTitle {
+              font-size: 17px;
+            }
+          }
         `}</style>
         <style jsx global>
           {`

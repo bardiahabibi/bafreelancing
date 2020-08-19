@@ -9,7 +9,7 @@ class Layout extends React.Component {
   render() {
     return (
       <div>
-        <Navbar page={this.props.page} />
+        <Navbar page={this.props.page} showModal={this.props.showModal} />
         {this.props.children}
         <Footer />
         <style jsx global>{`

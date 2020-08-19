@@ -63,6 +63,11 @@ class HtmlPostsSection extends React.Component {
               background-position: center center;
               margin-top: 65px;
             }
+
+            @media only screen and (max-width: 600px) {
+              #htmlMarginLogo {
+                margin-top: 45px;
+            }
           `}
         </style>
       </div>

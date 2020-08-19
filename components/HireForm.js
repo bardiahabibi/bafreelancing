@@ -53,7 +53,7 @@ class HireForm extends React.Component {
         "bafreelancing_gmail",
         templateId,
         variables,
-        "user_ZnttAT37i1Di1omsoNHoJ"
+        process.env.EMAILJS_KEY
       )
       .then(
         (response) => {

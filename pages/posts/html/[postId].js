@@ -1,21 +1,44 @@
+import Head from "next/head";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
+import React, { useState } from "react";
 import Layout from "../../../components/Layout";
 import numberOfPosts from "../../../public/posts/html/numberOfPosts.json";
+import HireForm from "../../../components/HireForm";
+import Modal from "../../../components/Modal";
 
 const htmlPost = ({ NumberOfPosts }) => {
+  const [modalShow, setModalShow] = useState(false);
   const router = useRouter();
   const postId = router.query.postId;
   const PostPage = dynamic(() =>
     import(`../../../public/posts/html/${postId}/PostPage`)
   );
   const imageUrl = `/posts/html/${postId}/header.png`;
+
+  const showModal = () => {
+    setModalShow(true);
+  };
+
+  const hideModal = () => {
+    setModalShow(false);
+  };
+
   return (
-    <Layout>
-      <div>
-        <PostPage Image={imageUrl} />
-      </div>
-    </Layout>
+    <div>
+      <Head>
+        <title>Post</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <Layout showModal={showModal}>
+        <div>
+          <PostPage Image={imageUrl} />
+        </div>
+        <Modal show={modalShow} hideModal={hideModal}>
+          <HireForm />
+        </Modal>
+      </Layout>
+    </div>
   );
 };
 

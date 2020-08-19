@@ -8,11 +8,26 @@ class Footer extends React.Component {
       <div>
         <div id="footerContainer">
           <div id="footerLogosContainer">
-            <div id="footerGithub"></div>
-            <div id="footerDev"></div>
-            <div id="footerLinkedin"></div>
+            <div id="footerGithub">
+              <a href="https://github.com/bardiahabibi" target="_blank">
+                <div style={{ height: "100%", weight: "100%" }}></div>
+              </a>
+            </div>
+            <div id="footerDev">
+              <a href="https://dev.to/bardiahabibi" target="_blank">
+                <div style={{ height: "100%", weight: "100%" }}></div>
+              </a>
+            </div>
+            <div id="footerLinkedin">
+              <a
+                href="https://linkedin.com/in/bardia-habibi-freelance"
+                target="_blank"
+              >
+                <div style={{ height: "100%", weight: "100%" }}></div>
+              </a>
+            </div>
           </div>
-          <div id="footerEmail">bardia.haibib@gmail.com</div>
+          <div id="footerEmail">bardiafreelancing@gmail.com</div>
           <div id="footerCopyRight">
             Copyright &#169; 2020 bafreelancing.com. All Rights Reserved
           </div>
@@ -69,6 +84,24 @@ class Footer extends React.Component {
             font-size: 15px;
             color: #ffffff;
             margin-top: 30px;
+          }
+
+          @media only screen and (max-width: 600px) {
+            #footerEmail {
+              font-family: Roboto-Regular;
+              font-size: 22px;
+              margin-top: 30px;
+            }
+            #footerCopyRight {
+              font-size: 15px;
+              margin-top: 30px;
+            }
+            #footerDev {
+              margin-left: 40px;
+            }
+            #footerLinkedin {
+              margin-left: 40px;
+            }
           }
         `}</style>
         <style jsx global>

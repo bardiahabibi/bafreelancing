@@ -44,6 +44,36 @@ class Landing extends React.Component {
               padding-right: 50px;
               line-height: 70px;
             }
+
+            @media only screen and (max-width: 950px) {
+              #landingHeader {
+                font-size: 60px;
+              }
+              #landingText {
+                font-size: 40px;
+                line-height: 60px;
+              }
+            }
+
+            @media only screen and (max-width: 800px) {
+              #landingHeader {
+                font-size: 50px;
+              }
+              #landingText {
+                font-size: 30px;
+                line-height: 50px;
+              }
+            }
+
+            @media only screen and (max-width: 650px) {
+              #landingHeader {
+                font-size: 40px;
+              }
+              #landingText {
+                font-size: 22px;
+                line-height: 40px;
+              }
+            }
           `}
         </style>
         <style jsx global>

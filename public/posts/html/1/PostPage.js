@@ -10,7 +10,9 @@ class PostPage extends React.Component {
       <div>
         <PostPageLayout>
           <div id="postPageHeaderImage"></div>
-          <div id="postPageTitleContainer">Title of the post</div>
+          <div id="postPageTitleContainer">
+            Title of the post is going to be responsive to changes of page
+          </div>
           <div id="postPageBodyContainer">
             <p>
               Typography starts by setting a foundation of font families and

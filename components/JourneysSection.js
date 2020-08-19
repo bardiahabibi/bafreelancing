@@ -66,6 +66,7 @@ class JourneysSection extends React.Component {
             text-align: center;
             align-self: center;
             margin-top: 20px;
+            transition: 0.3s ease-in-out;
           }
           #journeysSectionText {
             grid-area: journeysSectionText;
@@ -74,8 +75,9 @@ class JourneysSection extends React.Component {
             color: #535353;
             text-align: center;
             align-self: center;
-            padding-left: 130px;
-            padding-right: 130px;
+            padding-left: 19%;
+            padding-right: 19%;
+            transition: 0.3s ease-in-out;
           }
           #journeysSectionButtonContainer {
             grid-area: journeysSectionButtonContainer;
@@ -92,12 +94,70 @@ class JourneysSection extends React.Component {
             font-size: 31px;
             color: #f1f1f1;
             margin-top: 70px;
+            transition: 0.3s ease-in-out;
           }
           #journeysSectionButton:hover {
             cursor: pointer;
           }
           #journeysSectionButton:active {
             transform: scaleX(0.97);
+          }
+
+          @media only screen and (max-width: 950px) {
+            #journeysSectionHeader {
+              font-size: 43px;
+              margin-top: 20px;
+            }
+            #journeysSectionText {
+              font-size: 28px;
+              padding-left: 19%;
+              padding-right: 19%;
+            }
+            #journeysSectionButton {
+              width: 115px;
+              height: 62px;
+              border-radius: 16px;
+              font-size: 26px;
+              margin-top: 50px;
+            }
+          }
+
+          @media only screen and (max-width: 800px) {
+            #journeysSectionHeader {
+              font-size: 38px;
+              margin-top: 20px;
+            }
+            #journeysSectionText {
+              font-size: 23px;
+              padding-left: 14%;
+              padding-right: 14%;
+            }
+            #journeysSectionButton {
+              width: 105px;
+              height: 55px;
+              border-radius: 13px;
+              font-size: 22px;
+              margin-top: 35px;
+            }
+          }
+
+          @media only screen and (max-width: 650px) {
+            #journeysSectionHeader {
+              font-size: 28px;
+              margin-top: 90px;
+            }
+            #journeysSectionText {
+              font-size: 18px;
+              padding-left: 5%;
+              padding-right: 5%;
+            }
+            #journeysSectionButton {
+              width: 90px;
+              height: 49px;
+              border-radius: 13px;
+              font-size: 18px;
+              margin-top: 25px;
+            }
           }
         `}</style>
         <style jsx global>

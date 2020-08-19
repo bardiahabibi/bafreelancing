@@ -1,16 +1,41 @@
+import Head from "next/head";
 import Layout from "../components/Layout";
 import HtmlPostsSection from "../components/HtmlPostsSection";
 import CssPostsSection from "../components/CssPostsSection";
+import HireForm from "../components/HireForm";
+import Modal from "../components/Modal";
 
 class Journeys extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      modalShow: false,
+    };
   }
+
+  showModal = () => {
+    this.setState({
+      modalShow: true,
+    });
+  };
+
+  hideModal = () => {
+    this.setState({
+      modalShow: false,
+    });
+  };
+
   render() {
     return (
       <div>
-        <Layout page="Journeys">
+        <Head>
+          <title>Journeys</title>
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
+        </Head>
+        <Layout page="Journeys" showModal={this.showModal}>
           <div id="journeysPage">
             <div id="journeysMargin"></div>
             <div id="Header">Journeys</div>
@@ -19,6 +44,9 @@ class Journeys extends React.Component {
               <CssPostsSection />
             </div>
           </div>
+          <Modal show={this.state.modalShow} hideModal={this.hideModal}>
+            <HireForm />
+          </Modal>
         </Layout>
         <style jsx>{`
           #journeysPage {
@@ -44,6 +72,16 @@ class Journeys extends React.Component {
           #journeysMargin {
             grid-area: journeysMargin;
             background-color: #e8e8ff;
+          }
+
+          @media only screen and (max-width: 600px) {
+            #journeysPage {
+              grid-template-rows: 60px 1fr;
+            }
+            #Header {
+              margin-left: 50px;
+              font-size: 43px;
+            }
           }
         `}</style>
         <style jsx global>
