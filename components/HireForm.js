@@ -152,6 +152,7 @@ class HireForm extends React.Component {
                   "fromNameContainer formEmailContainer"
                   "formMessageContainer formMessageContainer"
                   "formAllottedTimeContainer formButtonContainer";
+                box-sizing: border-box;
               }
 
               #formContainer .labels {
@@ -244,6 +245,110 @@ class HireForm extends React.Component {
                 display: flex;
                 justify-content: flex-end;
                 align-items: flex-end;
+              }
+
+              @media only screen and (max-width: 1050px) {
+                #formContainer .labels {
+                  font-size: 23px;
+                }
+                #formContainer .inputText {
+                  width: 85%;
+                  height: 35px;
+                  font-size: 18px;
+                  margin-top: 18px;
+                  padding-left: 10px;
+                }
+                #formContainer .messageText {
+                  width: 91%;
+                  font-size: 20px;
+                  margin-top: 18px;
+                  padding-left: 10px;
+                }
+                #formButton {
+                  width: 90px;
+                  height: 45px;
+                  font-size: 22px;
+                }
+              }
+
+              @media only screen and (max-width: 730px) {
+                #formContainer .labels {
+                  font-size: 18px;
+                }
+                #formContainer .inputText {
+                  width: 85%;
+                  height: 35px;
+                  font-size: 16px;
+                  margin-top: 18px;
+                  padding-left: 10px;
+                }
+                #formContainer .messageText {
+                  width: 91%;
+                  font-size: 16px;
+                  margin-top: 18px;
+                  padding-left: 10px;
+                }
+                #formButton {
+                  width: 80px;
+                  height: 40px;
+                  font-size: 18px;
+                }
+              }
+
+              @media only screen and (max-width: 650px) {
+                #formContainer .labels {
+                  font-size: 17px;
+                }
+                #formContainer .inputText {
+                  width: 85%;
+                  height: 35px;
+                  font-size: 16px;
+                  margin-top: 18px;
+                  padding-left: 10px;
+                }
+                #formContainer .messageText {
+                  width: 91%;
+                  font-size: 16px;
+                  margin-top: 18px;
+                  padding-left: 10px;
+                }
+                #formButton {
+                  width: 80px;
+                  height: 40px;
+                  font-size: 18px;
+                }
+                #formContainer {
+                  width: 90vw;
+                  height: 85vh;
+                }
+                #fromNameContainer {
+                  grid-area: fromNameContainer;
+                  padding-top: 25px;
+                  padding-left: 10px;
+                }
+                #formEmailContainer {
+                  grid-area: formEmailContainer;
+                  padding-top: 25px;
+                  padding-left: 10px;
+                }
+                #formMessageContainer {
+                  grid-area: formMessageContainer;
+                  padding-top: 25px;
+                  padding-left: 10px;
+                }
+                #formAllottedTimeContainer {
+                  grid-area: formAllottedTimeContainer;
+                  padding-top: 10%;
+                  padding-left: 10px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                }
+                #formAllottedTimeContainer .inputText {
+                  margin-top: 0px;
+                }
+              }
+              @media only screen and (max-width: 400px) {
               }
             `}
           </style>

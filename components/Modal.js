@@ -54,6 +54,14 @@ class Modal extends React.Component {
               border-radius: 5px;
               transition: all 0.3s ease-out;
             }
+
+            @media only screen and (max-width: 650px) {
+              #modal {
+                width: 90vw;
+                height: 85vh;
+                left: 5vw;
+              }
+            }
           `}
         </style>
       </div>
