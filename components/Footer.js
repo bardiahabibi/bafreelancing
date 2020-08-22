@@ -27,7 +27,7 @@ class Footer extends React.Component {
               </a>
             </div>
           </div>
-          <div id="footerEmail">bardiafreelancing@gmail.com</div>
+          <div id="footerEmail">bardiafreelancing(at)gmail.com</div>
           <div id="footerCopyRight">
             Copyright &#169; 2020 bafreelancing.com. All Rights Reserved
           </div>

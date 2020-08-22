@@ -12,12 +12,15 @@
   "license": "ISC",
   "dependencies": {
     "emailjs-com": "^2.6.3",
+    "isomorphic-unfetch": "^3.0.0",
     "konva": "^7.0.5",
+    "markdown-to-jsx": "^6.11.4",
     "next": "^9.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-konva": "^16.13.0-5",
     "react-lottie": "^1.2.3",
+    "react-syntax-highlighter": "^13.5.1",
     "use-image": "^1.0.6"
   }
 }

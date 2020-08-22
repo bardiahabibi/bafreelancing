@@ -11,9 +11,7 @@ const htmlPost = ({ NumberOfPosts }) => {
   const [modalShow, setModalShow] = useState(false);
   const router = useRouter();
   const postId = router.query.postId;
-  const PostPage = dynamic(() =>
-    import(`../../../public/posts/html/${postId}/PostPage`)
-  );
+  const PostPage = dynamic(() => import(`../../../public/posts/html/PostPage`));
   const imageUrl = `/posts/html/${postId}/header.png`;
 
   const showModal = () => {
@@ -32,7 +30,7 @@ const htmlPost = ({ NumberOfPosts }) => {
       </Head>
       <Layout showModal={showModal}>
         <div>
-          <PostPage Image={imageUrl} />
+          <PostPage Image={imageUrl} postId={postId} />
         </div>
         <Modal show={modalShow} hideModal={hideModal}>
           <HireForm />

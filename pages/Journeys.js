@@ -41,7 +41,7 @@ class Journeys extends React.Component {
             <div id="Header">Journeys</div>
             <div id="postsContainer">
               <HtmlPostsSection />
-              <CssPostsSection />
+              {/* <CssPostsSection /> */}
             </div>
           </div>
           <Modal show={this.state.modalShow} hideModal={this.hideModal}>

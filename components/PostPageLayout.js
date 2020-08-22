@@ -21,14 +21,20 @@ class PostPageLayout extends React.Component {
             #postPageBodyContainer p {
               margin-bottom: 30px;
             }
+            #postPageBodyContainer .images {
+              text-align: center;
+              margin-top: 25px;
+              margin-bottom: 25px;
+            }
             #postPageTitleContainer {
+              with: 100%;
               padding-left: 14%;
               padding-right: 14%;
               text-align: center;
               font-family: Roboto-Regular;
               font-size: 45px;
               color: #535353;
-              padding-top: 30px;
+              padding-top: 0px;
               margin-bottom: 80px;
               box-sizing: border-box;
             }

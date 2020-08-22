@@ -10,7 +10,7 @@ class HtmlPostsSection extends React.Component {
     return (
       <div>
         <div id="postsSection">
-          <div id="postsSectionContainer">
+          {/*          <div id="postsSectionContainer">
             <Post
               postImage={"/components_assets/TechnologiesAssets/css.png"}
               author="Bardia"
@@ -28,6 +28,7 @@ class HtmlPostsSection extends React.Component {
               postNumber="2"
             />
           </div>
+    */}
           <div id="marginContainer">
             <div id="htmlMarginLogo"></div>
           </div>
