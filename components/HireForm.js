@@ -348,8 +348,6 @@ class HireForm extends React.Component {
                   margin-top: 0px;
                 }
               }
-              @media only screen and (max-width: 400px) {
-              }
             `}
           </style>
           <style jsx global>
@@ -382,10 +380,18 @@ class HireForm extends React.Component {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                text-align: center;
                 font-family: Roboto-Light;
                 font-size: 45px;
                 color: #535353;
                 line-height: 100px;
+              }
+              @media only screen and (max-width: 650px) {
+                #successContainer {
+                  width: 100%;
+                  height: 100%;
+                  font-size: 25px;
+                }
               }
             `}
           </style>
@@ -419,10 +425,18 @@ class HireForm extends React.Component {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                text-align: center;
                 font-family: Roboto-Light;
                 font-size: 45px;
                 color: #535353;
                 line-height: 100px;
+              }
+              @media only screen and (max-width: 650px) {
+                #successContainer {
+                  width: 100%;
+                  height: 100%;
+                  font-size: 25px;
+                }
               }
             `}
           </style>
