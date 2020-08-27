@@ -12,24 +12,18 @@ class CssPostsSection extends React.Component {
         <div id="postsSection">
           <div id="postsSectionContainer">
             <Post
-              postImage={"/components_assets/TechnologiesAssets/css.png"}
+              postImage={"/posts/css/1/header.png"}
               author="Bardia"
-              authorImage={"/components_assets/TechnologiesAssets/css.png"}
+              authorImage={
+                "/components_assets/CsspostsSectionAssets/balogo.png"
+              }
               postTitle="make a crud server side with python"
               postCategory={postCategory}
               postNumber="1"
             />
-            <Post
-              postImage={"/components_assets/TechnologiesAssets/css.png"}
-              author="Bardia"
-              authorImage={"/components_assets/TechnologiesAssets/css.png"}
-              postTitle="make a crud server side with python"
-              postCategory={postCategory}
-              postNumber="2"
-            />
           </div>
           <div id="marginContainer">
-            <div id="htmlMarginLogo"></div>
+            <div id="cssMarginLogo"></div>
           </div>
         </div>
         <style jsx>
@@ -54,7 +48,7 @@ class CssPostsSection extends React.Component {
               flex-direction: column;
               align-items: center;
             }
-            #htmlMarginLogo {
+            #cssMarginLogo {
               width: 60%;
               height: 100px;
               background-image: url("/components_assets/JourneysPageMarginAssets/css.png");
@@ -64,7 +58,7 @@ class CssPostsSection extends React.Component {
               margin-top: 65px;
             }
             @media only screen and (max-width: 600px) {
-              #htmlMarginLogo {
+              #cssMarginLogo {
                 margin-top: 45px;
             }
           `}

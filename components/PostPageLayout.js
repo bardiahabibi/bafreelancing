@@ -10,7 +10,7 @@ class PostPageLayout extends React.Component {
         <style jsx global>
           {`
             #postPageBodyContainer {
-              font-family: Roboto-Regular;
+              font-family: Roboto-Light;
               font-size: 21px;
               line-height: 29px;
               color: #535353;
@@ -23,20 +23,25 @@ class PostPageLayout extends React.Component {
             }
             #postPageBodyContainer .images {
               text-align: center;
-              margin-top: 25px;
-              margin-bottom: 25px;
+              margin-top: 65px;
+              margin-bottom: 65px;
+            }
+            #postPageBodyContainer a {
+              text-decoration: underline dotted;
             }
             #postPageTitleContainer {
               with: 100%;
               padding-left: 14%;
               padding-right: 14%;
               text-align: center;
-              font-family: Roboto-Regular;
-              font-size: 45px;
-              color: #535353;
               padding-top: 0px;
               margin-bottom: 80px;
               box-sizing: border-box;
+            }
+            #postPageTitleContainer h1 {
+              font-family: Roboto-Regular;
+              font-size: 45px;
+              color: #535353;
             }
             #postPageHeaderImage {
               width: 100%;
@@ -62,10 +67,12 @@ class PostPageLayout extends React.Component {
                 padding-right: 13%;
               }
               #postPageTitleContainer {
-                font-size: 27px;
                 padding-left: 10%;
                 padding-right: 10%;
                 margin-bottom: 40px;
+              }
+              #postPageTitleContainer h1 {
+                font-size: 27px;
               }
             }
 
@@ -78,11 +85,13 @@ class PostPageLayout extends React.Component {
                 padding-right: 5%;
               }
               #postPageTitleContainer {
-                font-size: 18px;
                 text-align: left;
                 padding-left: 5%;
                 padding-right: 5%;
                 margin-bottom: 25px;
+              }
+              #postPageTitleContainer h1 {
+                font-size: 18px;
               }
               #postPageBodyContainer p {
                 margin-bottom: 20px;
