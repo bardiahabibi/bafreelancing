@@ -12,12 +12,12 @@ class CssPostsSection extends React.Component {
         <div id="postsSection">
           <div id="postsSectionContainer">
             <Post
-              postImage={"/posts/css/1/header.png"}
+              postImage={"/posts/css/1/postImage.png"}
               author="Bardia"
               authorImage={
                 "/components_assets/CsspostsSectionAssets/balogo.png"
               }
-              postTitle="make a crud server side with python"
+              postTitle="Use Css Grid and Flexbox to Make Ideal Layouts"
               postCategory={postCategory}
               postNumber="1"
             />
