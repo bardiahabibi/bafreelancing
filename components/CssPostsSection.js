@@ -14,9 +14,7 @@ class CssPostsSection extends React.Component {
             <Post
               postImage={"/posts/css/1/postImage.png"}
               author="Bardia"
-              authorImage={
-                "/components_assets/CsspostsSectionAssets/balogo.png"
-              }
+              authorImage={"/posts/css/1/balogo.png"}
               postTitle="Use Css Grid and Flexbox to Make Ideal Layouts"
               postCategory={postCategory}
               postNumber="1"
