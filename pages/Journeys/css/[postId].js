@@ -3,11 +3,11 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import Layout from "../../../components/Layout";
-import numberOfPosts from "../../../public/posts/css/numberOfPosts.json";
+import postsUrlNames from "../../../public/posts/css/postsUrlNames.json";
 import HireForm from "../../../components/HireForm";
 import Modal from "../../../components/Modal";
 
-const cssPost = ({ NumberOfPosts }) => {
+const cssPost = ({ PostsUrlNames }) => {
   const [modalShow, setModalShow] = useState(false);
   const router = useRouter();
   const postId = router.query.postId;
@@ -39,7 +39,6 @@ const cssPost = ({ NumberOfPosts }) => {
   `,
           }}
         />
-        <title>Post</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Layout showModal={showModal}>
@@ -55,10 +54,7 @@ const cssPost = ({ NumberOfPosts }) => {
 };
 
 export async function getStaticPaths() {
-  let param = [];
-  for (let i = 1; i <= numberOfPosts.number; i++) {
-    param.push(i);
-  }
+  let param = postsUrlNames.urls;
   const path = param.map((item) => {
     let postId = item.toString();
     let params = { postId };
@@ -71,9 +67,9 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps() {
-  const NumberOfPosts = numberOfPosts;
+  const PostsUrlNames = postsUrlNames;
   return {
-    props: { NumberOfPosts },
+    props: { PostsUrlNames },
   };
 }
 

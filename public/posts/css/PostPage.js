@@ -1,3 +1,4 @@
+import Head from "next/head";
 import PostPageLayout from "../../../components/PostPageLayout";
 import fetch from "isomorphic-unfetch";
 import Markdown from "markdown-to-jsx";
@@ -10,7 +11,15 @@ class PostPage extends React.Component {
     this.state = {
       postBody: "",
       postTitle: "",
+      meta: {
+        headTitle: "",
+        headDescription: "",
+      },
     };
+  }
+
+  componentWillMount() {
+    this.fetchingMeta();
   }
 
   componentDidMount() {
@@ -32,9 +41,23 @@ class PostPage extends React.Component {
       .then((data) => this.setState({ postTitle: data }));
   };
 
+  fetchingMeta = () => {
+    const metaPath = `/posts/css/${this.props.postId}/meta.json`;
+    fetch(metaPath)
+      .then((r) => r.json())
+      .then((data) => this.setState({ meta: data }));
+  };
+
   render() {
     return (
       <div>
+        <Head>
+          <title>{this.state.meta.headTitle}</title>
+          <meta
+            name="description"
+            content={this.state.meta.headDescription}
+          ></meta>
+        </Head>
         <PostPageLayout>
           <div id="postPageHeaderImage"></div>
           <div id="postPageTitleContainer">

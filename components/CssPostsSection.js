@@ -12,12 +12,22 @@ class CssPostsSection extends React.Component {
         <div id="postsSection">
           <div id="postsSectionContainer">
             <Post
-              postImage={"/posts/css/1/postImage.png"}
+              postImage={"/posts/css/css-grid-and-flexbox/postImage.png"}
               author="Bardia"
-              authorImage={"/posts/css/1/balogo.png"}
+              authorImage={"/posts/css/css-grid-and-flexbox/balogo.png"}
               postTitle="Use Css Grid and Flexbox to Make Ideal Layouts"
               postCategory={postCategory}
               postNumber="1"
+              postUrlName="css-grid-and-flexbox"
+            />
+            <Post
+              postImage={"/posts/css/link-css-to-html/postImage.png"}
+              author="Bardia"
+              authorImage={"/posts/css/link-css-to-html/balogo.png"}
+              postTitle="Link Css to Html"
+              postCategory={postCategory}
+              postNumber="2"
+              postUrlName="link-css-to-html"
             />
           </div>
           <div id="marginContainer">

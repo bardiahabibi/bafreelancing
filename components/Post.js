@@ -10,8 +10,8 @@ class Post extends React.Component {
       <div>
         <div id="postContainer">
           <Link
-            href={`/posts/${this.props.postCategory}/[postId]`}
-            as={`/posts/${this.props.postCategory}/${this.props.postNumber}`}
+            href={`/Journeys/${this.props.postCategory}/[postId]`}
+            as={`/Journeys/${this.props.postCategory}/${this.props.postUrlName}`}
           >
             <div id="postImage"></div>
           </Link>
@@ -20,8 +20,8 @@ class Post extends React.Component {
             <div id="authorName">{this.props.author}</div>
           </div>
           <Link
-            href={`/posts/${this.props.postCategory}/[postId]`}
-            as={`/posts/${this.props.postCategory}/${this.props.postNumber}`}
+            href={`/Journeys/${this.props.postCategory}/[postId]`}
+            as={`/Journeys/${this.props.postCategory}/${this.props.postUrlName}`}
           >
             <div id="postTitle">{this.props.postTitle}</div>
           </Link>

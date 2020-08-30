@@ -5,16 +5,16 @@ The second thing I should tell you before starting is that for implementing a la
 So we are going to start with a simple layout. Suppose you want a layout like this:
 
 <div className="images">
-<img width="60%" src="/posts/css/1/firstLayout.png">
+<img width="60%" src="/posts/css/css-grid-and-flexbox/firstLayout.png">
 </div>
 
 Although we can make it with lots of different ways, I will focus on our combination i.e. CSS grid and flex. The outmost layer is a container whose name is "pageContainer". It has a fixed width, height, and padding size. Starting from outer to inner parts, we can first define this container. But first, we need to prepare the project files. Step one I built two files in my project directory as bellow:
 
 <div className="images">
-<img width="40%" src="/posts/css/1/folderStructure.png">
+<img width="40%" src="/posts/css/css-grid-and-flexbox/folderStructure.png">
 </div>
 
-There are different ways to import CSS style to the HTML page and you can have a look at some of them at W3schools or one of my journeys. I decided to manage styling in different style sheet file and import it to the HTML page as depicted. at each stage, I will show you code snippets of these two files. So back to code, first, we define the "pageContainer" which is the outermost container.
+There are different ways to import CSS style to the HTML page and you can have a look at some of them at <a href="https://www.w3schools.com/css/css_howto.asp" target="_blank">W3schools</a> or one of my <a href="https://bafreelancing.com/Journeys/css/link-css-to-html" target="_blank">journeys</a>. I decided to manage styling in different style sheet file and import it to the HTML page as depicted. at each stage, I will show you code snippets of these two files. So back to code, first, we define the "pageContainer" which is the outermost container.
 
 <SyntaxHighlighter language="xml">
     &lt;body>
@@ -130,19 +130,19 @@ Resize the page and see what happens. It works well. It is interesting, isn't it
 Now that you are familiar with the concept it's time to do something more realistic. We are going to make a layout for a webpage. I chose a work done by Manuel Rovira: <a href="https://dribbble.com/shots/11210586-DIG-BMX-Shop-Redesign" target="_blank">"DIG BMX Shop Redesign"</a>. We are going to establish a structural layout for that.
 
 <div className="images">
-<img width="100%" src="/posts/css/1/websiteUI.png">
+<img width="100%" src="/posts/css/css-grid-and-flexbox/websiteUI.png">
 </div>
 
 First of all, we try to convert the website UI to a conceptual layout. Something consists of boxes, paddings, and margins. I made an easy one for the given UI, look at it bellow. It divides the page into two main containers. The upper one is "navbarContainer" and the other box bellow it named "gridBody". I divided the "gridBody" to its constituent parts that are "Ad1", "Ad2", "product" and so on.
 
 <div className="images">
-<img width="100%" src="/posts/css/1/websiteLayout.png">
+<img width="100%" src="/posts/css/css-grid-and-flexbox/websiteLayout.png">
 </div>
 
 Now we have a structural concept for the page. It is time to decide how "grid-templates-columns" and "grid-template-rows" looks like. So first let divide the "gridBody" to columns and rows.
 
 <div className="images">
-<img width="100%" src="/posts/css/1/websiteLayoutGrid.png">
+<img width="100%" src="/posts/css/css-grid-and-flexbox/websiteLayoutGrid.png">
 </div>
 
 Everything is ready to start code. The strategy is "going from outer to inner" parts. So I start with outermost containers.
