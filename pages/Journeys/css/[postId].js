@@ -55,11 +55,23 @@ const cssPost = ({ PostsUrlNames }) => {
 
 export async function getStaticPaths() {
   let param = postsUrlNames.urls;
-  const path = param.map((item) => {
-    let postId = item.toString();
-    let params = { postId };
-    return { params };
-  });
+  // const path = param.map((item) => {
+  //   let postId = item.toString();
+  //   let params = { postId };
+  //   return { params };
+  // });
+  const path = [
+    {
+      params: {
+        postId: "css-grid-and-flexbox",
+      },
+    },
+    {
+      params: {
+        postId: "link-css-to-html",
+      },
+    },
+  ];
   return {
     paths: path,
     fallback: false,

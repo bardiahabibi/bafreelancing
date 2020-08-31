@@ -54,7 +54,6 @@ class Journeys extends React.Component {
             <div id="journeysMargin"></div>
             <div id="Header">Journeys</div>
             <div id="postsContainer">
-              {/*<HtmlPostsSection />*/}
               <CssPostsSection />
             </div>
           </div>
