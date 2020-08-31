@@ -1,18 +1,22 @@
 import Head from "next/head";
+import path from "path";
+import fs from "fs";
+import fetch from "isomorphic-unfetch";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "../../../components/Layout";
 import postsUrlNames from "../../../public/posts/css/postsUrlNames.json";
 import HireForm from "../../../components/HireForm";
 import Modal from "../../../components/Modal";
 
-const cssPost = ({ PostsUrlNames }) => {
+const cssPost = ({ metaData }) => {
   const [modalShow, setModalShow] = useState(false);
   const router = useRouter();
   const postId = router.query.postId;
   const PostPage = dynamic(() => import(`../../../public/posts/css/PostPage`));
   const imageUrl = `/posts/css/${postId}/header.png`;
+  const metaPath = `/posts/css/${postId}/meta.json`;
 
   const showModal = () => {
     setModalShow(true);
@@ -40,6 +44,8 @@ const cssPost = ({ PostsUrlNames }) => {
           }}
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>{metaData.headTitle}</title>
+        <meta name="description" content={metaData.headDescription}></meta>
       </Head>
       <Layout showModal={showModal}>
         <div>
@@ -66,10 +72,14 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps() {
-  const PostsUrlNames = postsUrlNames;
+export async function getStaticProps(ctx) {
+  const metaPath = path.join(
+    process.cwd(),
+    `public/posts/css/${ctx.params.postId}/meta.json`
+  );
+  const metaData = JSON.parse(fs.readFileSync(metaPath, "utf8"));
   return {
-    props: { PostsUrlNames },
+    props: { metaData },
   };
 }
 

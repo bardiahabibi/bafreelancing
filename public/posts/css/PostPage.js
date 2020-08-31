@@ -18,9 +18,7 @@ class PostPage extends React.Component {
     };
   }
 
-  componentWillMount() {
-    this.fetchingMeta();
-  }
+  componentWillMount() {}
 
   componentDidMount() {
     this.fetchingPost();
@@ -41,23 +39,9 @@ class PostPage extends React.Component {
       .then((data) => this.setState({ postTitle: data }));
   };
 
-  fetchingMeta = () => {
-    const metaPath = `/posts/css/${this.props.postId}/meta.json`;
-    fetch(metaPath)
-      .then((r) => r.json())
-      .then((data) => this.setState({ meta: data }));
-  };
-
   render() {
     return (
       <div>
-        <Head>
-          <title>{this.state.meta.headTitle}</title>
-          <meta
-            name="description"
-            content={this.state.meta.headDescription}
-          ></meta>
-        </Head>
         <PostPageLayout>
           <div id="postPageHeaderImage"></div>
           <div id="postPageTitleContainer">
