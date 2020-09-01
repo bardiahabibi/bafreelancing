@@ -48,7 +48,7 @@ const cssPost = ({ metaData }) => {
         <meta name="description" content={metaData.headDescription}></meta>
         <link
           rel="canonical"
-          href={`https://bafreelancing.com/Journeys/${postId}`}
+          href={`https://bafreelancing.com/Journeys/css/${postId}`}
         />
       </Head>
       <Layout showModal={showModal}>
