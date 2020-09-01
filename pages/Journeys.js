@@ -48,6 +48,7 @@ class Journeys extends React.Component {
             name="viewport"
             content="initial-scale=1.0, width=device-width"
           />
+          <link rel="canonical" href="https://bafreelancing.com/Journeys" />
         </Head>
         <Layout page="Journeys" showModal={this.showModal}>
           <div id="journeysPage">

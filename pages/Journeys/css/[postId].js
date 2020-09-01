@@ -46,6 +46,10 @@ const cssPost = ({ metaData }) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>{metaData.headTitle}</title>
         <meta name="description" content={metaData.headDescription}></meta>
+        <link
+          rel="canonical"
+          href={`https://bafreelancing.com/Journeys/${postId}`}
+        />
       </Head>
       <Layout showModal={showModal}>
         <div>

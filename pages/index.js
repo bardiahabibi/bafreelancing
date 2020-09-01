@@ -50,6 +50,7 @@ class index extends React.Component {
             name="viewport"
             content="initial-scale=1.0, width=device-width"
           />
+          <link rel="canonical" href="https://bafreelancing.com" />
         </Head>
         <Layout page="Home" showModal={this.showModal}>
           <Landing />
