@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+sitemap: https://bafreelancing.com/sitemap/sitemap.xml
