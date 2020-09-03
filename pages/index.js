@@ -51,6 +51,7 @@ class index extends React.Component {
             content="initial-scale=1.0, width=device-width"
           />
           <link rel="canonical" href="https://bafreelancing.com" />
+          <meta name="yandex-verification" content="5729b5eb025aad53" />
         </Head>
         <Layout page="Home" showModal={this.showModal}>
           <Landing />
