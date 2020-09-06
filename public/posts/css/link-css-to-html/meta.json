@@ -1,4 +1,5 @@
 {
   "headTitle": "Link Css to Html",
-  "headDescription": "When you decide to change the style of your HTML page, you need to add CSS to it. But how to do and which way to adopt is a topic we are going to deal with in what follows. We are going to cover inline, internal and external styling methods using CSS."
+  "headDescription": "When you decide to change the style of your HTML page, you need to add CSS to it. But how to do and which way to adopt is a topic we are going to deal with in what follows. We are going to cover inline, internal and external styling methods using CSS.",
+  "headKeywords": "CSS, HTML, link CSS, Internal Style, External Style, Inline Style"
 }

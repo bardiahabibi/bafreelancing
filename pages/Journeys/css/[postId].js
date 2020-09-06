@@ -16,7 +16,6 @@ const cssPost = ({ metaData }) => {
   const postId = router.query.postId;
   const PostPage = dynamic(() => import(`../../../public/posts/css/PostPage`));
   const imageUrl = `/posts/css/${postId}/header.png`;
-  const metaPath = `/posts/css/${postId}/meta.json`;
 
   const showModal = () => {
     setModalShow(true);
@@ -50,6 +49,7 @@ const cssPost = ({ metaData }) => {
           rel="canonical"
           href={`https://bafreelancing.com/Journeys/css/${postId}`}
         />
+        <meta name="keywords" content={metaData.headKeywords}></meta>
       </Head>
       <Layout showModal={showModal}>
         <div>
