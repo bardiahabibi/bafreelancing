@@ -1,4 +1,3 @@
-import Head from "next/head";
 import PostPageLayout from "../../../components/PostPageLayout";
 import fetch from "isomorphic-unfetch";
 import Markdown from "markdown-to-jsx";

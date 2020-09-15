@@ -44,10 +44,12 @@ class PostPageLayout extends React.Component {
               color: #535353;
             }
             #postPageHeaderImage {
-              width: 100%;
-              height: 60vh;
+              width: 70%;
+              height: 35vw;
+              margin-left: 15%;
+              margin-top: 5vh;
               background-repeat: no-repeat;
-              background-size: cover;
+              background-size: contain;
               background-position: center center;
             }
             @font-face {
@@ -60,6 +62,15 @@ class PostPageLayout extends React.Component {
             }
 
             @media only screen and (max-width: 820px) {
+              #postPageHeaderImage {
+                width: 70%;
+                height: 40vw;
+                margin-left: 15%;
+                margin-top: 5vh;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+              }
               #postPageBodyContainer {
                 font-size: 17px;
                 line-height: 23px;
@@ -77,6 +88,15 @@ class PostPageLayout extends React.Component {
             }
 
             @media only screen and (max-width: 450px) {
+              #postPageHeaderImage {
+                width: 90%;
+                height: 50vw;
+                margin-left: 5%;
+                margin-top: 5vh;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+              }
               #postPageBodyContainer {
                 font-family: Roboto-Regular;
                 font-size: 15px;

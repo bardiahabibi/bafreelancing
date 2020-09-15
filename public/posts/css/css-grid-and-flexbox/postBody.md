@@ -260,7 +260,7 @@ At last, let's add "Ad1", "Ad2", and some products to page.
 That's it! We have done it. It does not need to say there was not a whole process of designing of a website layout. For a good and robust design, you need to do lots of work on details and make it more and more responsive to changes. But it was a good entry point to have a look at the power of combining CSS grid and flexbox. Feel free to test it your self:
 
 <iframe src="https://codesandbox.io/embed/cssgridlayout-and-flexbox-combination-qf3nn?fontsize=14&hidenavigation=1&theme=dark&view=preview"
-     style="width:100%; height:400px; border:0; border-radius: 4px; overflow:hidden;"
+     style="width:100%; height:400px; border:solid 3px #01294A; border-radius: 10px; overflow:hidden;"
      title="cssGridLayout-and-flexBox-combination"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"

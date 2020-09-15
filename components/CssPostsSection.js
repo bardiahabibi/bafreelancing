@@ -29,6 +29,15 @@ class CssPostsSection extends React.Component {
               postNumber="2"
               postUrlName="link-css-to-html"
             />
+            <Post
+              postImage={"/posts/css/css-animation-text-effects/postImage.png"}
+              author="Bardia"
+              authorImage={"/posts/css/css-animation-text-effects/balogo.png"}
+              postTitle="Make Beautiful Text Effects Using CSS Animations"
+              postCategory={postCategory}
+              postNumber="3"
+              postUrlName="css-animation-text-effects"
+            />
           </div>
           <div id="marginContainer">
             <div id="cssMarginLogo"></div>

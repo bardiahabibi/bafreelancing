@@ -1,7 +1,6 @@
 import Head from "next/head";
 import path from "path";
 import fs from "fs";
-import fetch from "isomorphic-unfetch";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";

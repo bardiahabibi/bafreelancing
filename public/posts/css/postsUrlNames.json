@@ -1,3 +1,7 @@
 {
-  "urls": ["css-grid-and-flexbox", "link-css-to-html"]
+  "urls": [
+    "css-grid-and-flexbox",
+    "link-css-to-html",
+    "css-animation-text-effects"
+  ]
 }
