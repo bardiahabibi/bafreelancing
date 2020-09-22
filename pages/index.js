@@ -51,6 +51,14 @@ class index extends React.Component {
             content="initial-scale=1.0, width=device-width"
           />
           <link rel="canonical" href="https://bafreelancing.com" />
+          <meta
+            name="description"
+            content="In this portfolio website, I shared my experiences about web developing skills. I tried to make code samples practical and easy to understand."
+          ></meta>
+          <meta
+            name="keywords"
+            content="Portfolio,Web Developer,Freelancer,Programming"
+          ></meta>
           <meta name="yandex-verification" content="5729b5eb025aad53" />
         </Head>
         <Layout page="Home" showModal={this.showModal}>

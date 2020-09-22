@@ -49,6 +49,14 @@ class Journeys extends React.Component {
             content="initial-scale=1.0, width=device-width"
           />
           <link rel="canonical" href="https://bafreelancing.com/Journeys" />
+          <meta
+            name="description"
+            content="Here are some code journeys I shared with you. They are categorized into different web technologies such as HTML, CSS, JS,..."
+          ></meta>
+          <meta
+            name="keywords"
+            content="Blog, Web Development, Posts, HTML, CSS"
+          ></meta>
         </Head>
         <Layout page="Journeys" showModal={this.showModal}>
           <div id="journeysPage">
