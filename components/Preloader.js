@@ -4,22 +4,6 @@ class Preloader extends React.Component {
     this.state = {};
   }
 
-  componentDidMount() {
-    window.addEventListener("load", this.loadEventhHandeler, true);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("load", this.loadEventhHandeler, true);
-  }
-
-  loadEventhHandeler = () => {
-    const preload = document.querySelector(".preload");
-    preload.classList.add("preloadFadeOut");
-    setTimeout(() => {
-      preload.classList.add("preloadRemove");
-    }, 350);
-  };
-
   render() {
     return (
       <div>
