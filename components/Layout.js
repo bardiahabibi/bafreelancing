@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Preloader from "./Preloader";
 
 class Layout extends React.Component {
   constructor(props) {
@@ -9,6 +10,7 @@ class Layout extends React.Component {
   render() {
     return (
       <div>
+        <Preloader />
         <Navbar page={this.props.page} showModal={this.props.showModal} />
         {this.props.children}
         <Footer />
