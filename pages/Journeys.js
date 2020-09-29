@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import HtmlPostsSection from "../components/HtmlPostsSection";
 import CssPostsSection from "../components/CssPostsSection";
+import JsPostsSection from "../components/JsPostSection";
 import HireForm from "../components/HireForm";
 import Modal from "../components/Modal";
 
@@ -64,6 +65,7 @@ class Journeys extends React.Component {
             <div id="Header">Journeys</div>
             <div id="postsContainer">
               <CssPostsSection />
+              <JsPostsSection />
             </div>
           </div>
           <Modal show={this.state.modalShow} hideModal={this.hideModal}>

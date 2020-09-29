@@ -99,6 +99,12 @@ class Post extends React.Component {
               font-size: 17px;
             }
           }
+
+          @media only screen and (max-width: 450px) {
+            #postTitle {
+              font-size: 15px;
+            }
+          }
         `}</style>
         <style jsx global>
           {`
