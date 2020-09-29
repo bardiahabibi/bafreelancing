@@ -1,5 +1,5 @@
 {
-  "headTitle": "Link Css to Html",
-  "headDescription": "When you decide to change the style of your HTML page, you need to add CSS to it. But how to do and which way to adopt is a topic we are going to deal with in what follows. We are going to cover inline, internal and external styling methods using CSS.",
-  "headKeywords": "CSS, HTML, link CSS, Internal Style, External Style, Inline Style"
+  "headTitle": "Preloader with CSS and JS",
+  "headDescription": "In this post we are going to make a preloader page step by step. By the concept covered in this post you can make any preloader page using css and javascript. ",
+  "headKeywords": "CSS, HTML, JS, Preloader, Preloader Page, Preloading"
 }
