@@ -7,7 +7,7 @@ class Landing extends React.Component {
     return (
       <div>
         <div id="landingContainer">
-          <div id="landingHeader">Welcome to BaFreeLancing!</div>
+          <div id="landingHeader">Welcome to BaFreeLancing</div>
           <div id="landingText">
             I am Bardia and Here I manage freelancing part of my life also share
             some experiences
