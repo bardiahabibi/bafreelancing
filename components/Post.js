@@ -30,8 +30,9 @@ class Post extends React.Component {
           #postContainer {
             width: 365px;
             height: 420px;
-            border: solid 1px #707070;
-            border-radius: 21px;
+            border-radius: 0px;
+            box-shadow: 0px 0px 5px gray;
+            transition: 0.4s;
             margin-top: 65px;
             margin-left: 75px;
             display: grid;
@@ -42,9 +43,11 @@ class Post extends React.Component {
               "postAuthorContainer"
               "postTitle";
           }
+          #postContainer :hover {
+            box-shadow: 0px 0px 10px gray;
+          }
           #postImage {
             grid-area: postImage;
-            border-radius: 21px 21px 0px 0px;
             background-image: url(${this.props.postImage});
             background-repeat: no-repeat;
             background-size: cover;
