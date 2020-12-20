@@ -32,7 +32,7 @@ class Post extends React.Component {
             height: 420px;
             border-radius: 0px;
             box-shadow: 0px 0px 5px gray;
-            transition: 0.4s;
+            transition: 0.3s;
             margin-top: 65px;
             margin-left: 75px;
             display: grid;
@@ -44,7 +44,7 @@ class Post extends React.Component {
               "postTitle";
           }
           #postContainer :hover {
-            box-shadow: 0px 0px 10px gray;
+            box-shadow: 0px 0px 20px gray;
           }
           #postImage {
             grid-area: postImage;
@@ -99,13 +99,13 @@ class Post extends React.Component {
               margin-left: 10px;
             }
             #postTitle {
-              font-size: 17px;
+              font-size: 20px;
             }
           }
 
           @media only screen and (max-width: 450px) {
             #postTitle {
-              font-size: 15px;
+              font-size: 20px;
             }
           }
         `}</style>
