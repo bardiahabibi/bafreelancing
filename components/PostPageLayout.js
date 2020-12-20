@@ -10,12 +10,12 @@ class PostPageLayout extends React.Component {
         <style jsx global>
           {`
             #postPageBodyContainer {
-              font-family: Roboto-Light;
-              font-size: 21px;
-              line-height: 29px;
-              color: #535353;
-              padding-left: 19%;
-              padding-right: 19%;
+              font-family: Montserrat;
+              font-size: 16px;
+              line-height: 24px;
+              color: #303030;
+              padding-left: 23%;
+              padding-right: 23%;
               box-sizing: border-box;
             }
             #postPageBodyContainer p {
@@ -39,14 +39,14 @@ class PostPageLayout extends React.Component {
               box-sizing: border-box;
             }
             #postPageTitleContainer h1 {
-              font-family: Roboto-Regular;
-              font-size: 45px;
-              color: #535353;
+              font-family: FiraSans-Medium;
+              font-size: 32px;
+              color: #303030;
             }
             #postPageHeaderImage {
-              width: 70%;
+              width: 60%;
               height: 35vw;
-              margin-left: 15%;
+              margin-left: 20%;
               margin-top: 5vh;
               background-repeat: no-repeat;
               background-size: contain;
@@ -60,6 +60,10 @@ class PostPageLayout extends React.Component {
               font-family: Roboto-Light;
               src: url("/fonts/Roboto-Light.ttf");
             }
+            @font-face {
+              font-family: FiraSans-Medium;
+              src: url("/fonts/FiraSans-Medium.ttf");
+            }
 
             @media only screen and (max-width: 820px) {
               #postPageHeaderImage {
@@ -72,8 +76,8 @@ class PostPageLayout extends React.Component {
                 background-position: center center;
               }
               #postPageBodyContainer {
-                font-size: 17px;
-                line-height: 23px;
+                font-size: 16px;
+                line-height: 24px;
                 padding-left: 13%;
                 padding-right: 13%;
               }
@@ -83,7 +87,7 @@ class PostPageLayout extends React.Component {
                 margin-bottom: 40px;
               }
               #postPageTitleContainer h1 {
-                font-size: 27px;
+                font-size: 32px;
               }
             }
 
@@ -98,9 +102,8 @@ class PostPageLayout extends React.Component {
                 background-position: center center;
               }
               #postPageBodyContainer {
-                font-family: Roboto-Regular;
-                font-size: 15px;
-                line-height: 20px;
+                font-size: 16px;
+                line-height: 24px;
                 padding-left: 5%;
                 padding-right: 5%;
               }
@@ -111,7 +114,7 @@ class PostPageLayout extends React.Component {
                 margin-bottom: 25px;
               }
               #postPageTitleContainer h1 {
-                font-size: 18px;
+                font-size: 24px;
               }
               #postPageBodyContainer p {
                 margin-bottom: 20px;

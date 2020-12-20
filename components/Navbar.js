@@ -44,7 +44,7 @@ class Navbar extends React.Component {
               Hire
             </div>
           </div>
-          <div id="communicationsContainer">
+          {/* <div id="communicationsContainer">
             <div id="devLogo">
               <a href="https://dev.to/bardiahabibi" target="_blank">
                 <div style={{ height: "100%", weight: "100%" }}></div>
@@ -64,13 +64,13 @@ class Navbar extends React.Component {
                 <div style={{ height: "100%", weight: "100%" }}></div>
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
         <style jsx>
           {`
             .navbarContainer {
               width: 100%;
-              height: 107px;
+              height: 55px;
               background-color: #00345f;
               display: grid;
               grid-template-columns: 150px 1fr 180px;
@@ -92,9 +92,10 @@ class Navbar extends React.Component {
             }
             .navbarItem {
               margin-left: 12%;
-              font-size: 25px;
-              color: #d9d9d9;
-              font-family: Roboto-Regular;
+              font-size: 16px;
+              color: #e8e8e8;
+              font-family: Montserrat;
+              font-weight: 500;
               transition: 0.2s ease-in-out;
             }
             .navbarItem :hover {
@@ -169,7 +170,7 @@ class Navbar extends React.Component {
               .navbarItem {
                 margin-left: 8%;
                 font-size: 16px;
-                font-family: Roboto-Regular;
+                font-family: Montserrat;
               }
               .navbarContainer {
                 grid-template-columns: 130px 1fr;
